@@ -10,11 +10,13 @@
 </head>
 <body>
 <div id="app">
-    <button v-on:click="show = !show">Show / Hide</button>
-        <p v-if="show">I'm part-time visible!</p>
-        <p v-else>Am i visible ?</p>
-        <p v-show="show">Hurry, I'm here</p>
+        <p>{{title}}</p>
         <hr>
+        <!-- <div class="user" v-for="(user) in users">
+            <p>Username : {{user.username}}</p>
+        </div> -->
+        <app-user></app-user>
+        <app-user></app-user>
         <!-- <ul>
             <li v-for="(person, index) in persons">{{person.name}} - {{index}}</li>
         </ul> -->
